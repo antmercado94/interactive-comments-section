@@ -1,0 +1,9 @@
+@import url("./fonts.css");
+@import "tailwindcss/components";
+@import "./components/index.css";
+@tailwind base;
+@tailwind utilities;
+
+:root {
+  --primary-moderate-blue: hsl(238, 40%, 52%);
+}

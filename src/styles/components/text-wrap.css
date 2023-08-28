@@ -1,0 +1,30 @@
+@layer components {
+  .text-content-container > div {
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* 
+    https://css-tricks.com/the-cleanest-trick-for-autogrowing-textareas/ 
+  */
+  .grow-wrap {
+    display: grid;
+  }
+  .grow-wrap::after {
+    content: attr(data-replicated-value) " ";
+    white-space: pre-wrap;
+    visibility: hidden;
+  }
+  .grow-wrap > textarea {
+    resize: none;
+  }
+  .grow-wrap > textarea,
+  .grow-wrap::after {
+    font: inherit;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .grow-wrap::after {
+    /* match border */
+    @apply border-[1.8px] px-[1.4rem] py-2;
+  }
+}

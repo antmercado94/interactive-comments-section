@@ -37,7 +37,7 @@ const Score = () => {
   return (
     <div className="flex gap-3 rounded-lg bg-neutral-very-light-gray px-3 py-2 sm:flex-col sm:items-center sm:gap-4 sm:px-2 sm:pb-[0.95rem] sm:pt-[0.75rem]">
       <ScoreBtn
-        id="add"
+        aria-label="Add"
         onClick={() => setPostVote(id, "ADD")}
         className={currentVote === "ADD" ? "voted" : ""}
       >
@@ -47,7 +47,7 @@ const Score = () => {
         {currentScore}
       </span>
       <ScoreBtn
-        id="subtract"
+        aria-label="Subtract"
         onClick={() => setPostVote(id, "SUBTRACT")}
         className={currentVote === "SUBTRACT" ? "voted" : ""}
       >

@@ -12,7 +12,7 @@ const ModalView = ({ deletePost, closeModal }: Props) => {
       <Button
         key={button}
         size={"modal"}
-        id={button === 1 ? "cancel" : "delete"}
+        aria-label={button === 1 ? "Cancel" : "Delete"}
         className={`${
           button === 1 ? "bg-neutral-grayish-blue" : "bg-primary-soft-red"
         } basis-1/2`}

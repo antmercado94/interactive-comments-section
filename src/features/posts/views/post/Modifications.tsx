@@ -24,7 +24,7 @@ const Modifications = () => {
             size={null}
             className="text-primary-moderate-blue"
             onClick={handlePostReply}
-            id="reply"
+            aria-label="Reply"
           >
             <Icons.Reply /> Reply
           </Button>
@@ -36,7 +36,7 @@ const Modifications = () => {
             size={null}
             className="text-primary-soft-red"
             onClick={() => handlePostDelete(id)}
-            id="deleteConfirm"
+            aria-label="Delete Confirm"
           >
             <Icons.Delete /> Delete
           </Button>
@@ -45,7 +45,7 @@ const Modifications = () => {
             size={null}
             className="text-primary-moderate-blue"
             onClick={handlePostEdit}
-            id="edit"
+            aria-label="Edit"
           >
             <Icons.Edit /> Edit
           </Button>

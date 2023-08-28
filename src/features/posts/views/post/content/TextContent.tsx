@@ -65,7 +65,7 @@ const TextContent = () => {
             defaultValue={parseTextContent(textContent) as string}
           ></Textarea>
           <Button
-            id="update"
+            aria-label="Update"
             className="justify-self-end"
             onClick={() => handleTextContentUpdate(id, updateTextContent)}
           >

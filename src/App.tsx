@@ -9,6 +9,7 @@ function App() {
 
   return (
     <main>
+      <h1 className="sr-only">Home</h1>
       <div className="relative min-h-screen bg-neutral-very-light-gray py-4 sm:py-12">
         {openModal && <Modal />}
         {/* main content */}

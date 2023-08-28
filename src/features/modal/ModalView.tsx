@@ -12,6 +12,7 @@ const ModalView = ({ deletePost, closeModal }: Props) => {
       <Button
         key={button}
         size={"modal"}
+        id={button === 1 ? "cancel" : "delete"}
         className={`${
           button === 1 ? "bg-neutral-grayish-blue" : "bg-primary-soft-red"
         } basis-1/2`}

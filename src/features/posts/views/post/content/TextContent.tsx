@@ -65,6 +65,7 @@ const TextContent = () => {
             defaultValue={parseTextContent(textContent) as string}
           ></Textarea>
           <Button
+            id="update"
             className="justify-self-end"
             onClick={() => handleTextContentUpdate(id, updateTextContent)}
           >

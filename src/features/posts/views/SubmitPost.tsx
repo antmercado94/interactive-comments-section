@@ -60,7 +60,9 @@ const SubmitPost = ({ type, postId }: Props) => {
           ></Textarea>
           {/* desktop btn */}
           <div className="hidden sm:block">
-            <Button onClick={() => handleAddPost(postId)}>{type}</Button>
+            <Button id="desktopSubmit" onClick={() => handleAddPost(postId)}>
+              {type}
+            </Button>
           </div>
         </div>
 
@@ -69,7 +71,9 @@ const SubmitPost = ({ type, postId }: Props) => {
           <div className="block flex-shrink-0">
             <Avatar src={userAvatar} alt={username} />
           </div>
-          <Button onClick={() => handleAddPost(postId)}>{type}</Button>
+          <Button id="mobileSubmit" onClick={() => handleAddPost(postId)}>
+            {type}
+          </Button>
         </div>
       </div>
     </section>
